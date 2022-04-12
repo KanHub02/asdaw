@@ -1,0 +1,2278 @@
+<!doctype html>
+<html lang="ru" data-int="1">
+<head>
+    <script>
+            var $_PARAM = {ga: "UA-66419307-1", ya: 37244920};
+            window.ga = window.ga || function () {
+                (ga.q = ga.q || []).push(arguments)
+            };
+            ga.l = +new Date;
+            ga("create", $_PARAM.ga, "auto");
+            ga("send", "pageview");
+
+            (function(){
+                const onclick = function(event){
+                    event = event || doc.event;
+                    const target = event.target || event.srcElement;
+                    const location = [];
+                    let is_send = false;
+                    let index_news = 0;
+                    const next_parent = function(el){
+                        if(el.tagName === 'A' || el.getAttribute('data-stat')){
+                            is_send = true;
+                        }
+                        let location_str = el.getAttribute('data-stat') || '';
+                        let location_arr = location_str.split(/\s+/mig).reverse();
+                        for(const i in location_arr){
+                            location_arr[i] = location_arr[i].replace(/\s+/mig, '');
+                            if(location_arr[i] !== ''){
+                                location.push(location_arr[i]);
+                            }
+                        }
+                        if(index_news === 0){
+                            index_news = (el.getAttribute('data-stat-num') || 0) | 0;
+                        }
+                        if(el.parentNode.tagName !== 'BODY'){
+                            next_parent(el.parentNode);
+                        }else if(location.length !== 0){
+                            if(location.indexOf('none') !== -1 || is_send === false){
+                                return;
+                            }
+                            ga('send', 'event', 'Click', location.reverse().join(' '), '' + index_news);
+                        }
+                    };
+                    next_parent(target);
+                };
+                const doc = document;
+                const listener_event = 'click';
+                const listener_function = 'addEventListener';
+                const listener_function_ie = 'attachEvent';
+                if(doc[listener_function]){
+                    doc[listener_function](listener_event, onclick, true);
+                }else{
+                    doc[listener_function_ie]('on' + listener_event, onclick);
+                }
+            }());
+
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script>
+         (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter37244920 = new Ya.Metrika({ id:37244920, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/37244920" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
+
+    <script>
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                n.queue=[];t=b.createElement(e);t.async=!0;
+                t.src=v;s=b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t,s)}(window, document,'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '261538182565658');
+            fbq('track', 'PageView');
+
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=261538182565658&ev=PageView&noscript=1"
+    /></noscript>
+
+    <meta charset="utg-8"/>
+    <title>Кактус – новости Кыргызстана и Бишкека</title>
+    <meta content="Кактус – новости Кыргызстана и Бишкека" name="title"/>
+    <meta content="Кактус – новости Кыргызстана и Бишкека" property="og:title"/>
+    <meta content="Кактус – новости Кыргызстана и Бишкека" name="twitter:title"/>
+    <meta content="Оперативно и достоверно о важных событиях в Кыргызстане и Бишкеке: политика, экономика, происшествия, шоубизнес."
+          name="description"/>
+    <meta content="Оперативно и достоверно о важных событиях в Кыргызстане и Бишкеке: политика, экономика, происшествия, шоубизнес."
+          property="og:description"/>
+    <meta content="Оперативно и достоверно о важных событиях в Кыргызстане и Бишкеке: политика, экономика, происшествия, шоубизнес."
+          name="twitter:description"/>
+    <meta content="новости Кыргызстана, новости Бишкека, новости Кыргызстана на сегодня, новости Киргизии, вечерние новости Бишкека, новости, Бишкек, Кыргызстан, важное"
+          name="keywords"/>
+    <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0"
+          name="viewport"/>
+    <meta content="summary_large_image" name="twitter:card"/>
+    <meta content="#4FAE47" name="theme-color"/>
+    <meta content="#4FAE47" name="msapplication-navbutton-color"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="#4FAE47" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="https://kaktus.media/src/Template/Base/og.default.jpg?mtime=1614830605" name="twitter:image"/>
+    <meta content="92nm14krul2ox01kccusdzu1dpotzv" name="facebook-domain-verification"/>
+    <meta content="https://kaktus.media/" property="og:url"/>
+    <meta content="kaktus.media" property="twitter:domain"/>
+    <meta content="https://kaktus.media/" property="twitter:url"/>
+    <meta content="website" property="og:type"/>
+    <meta content="https://kaktus.media/src/Template/Base/og.default.jpg?mtime=1614830605" property="og:image"/>
+    <script async defer src="https://kaktus.media/src/Template/Base/scripts/lazysizes.min.js?mtime=1616564568"/>
+    </script>
+    <script async defer src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"/>
+    </script>
+    <script async defer src="https://ad.zima.kg/load/?session_id=2l8f8ushplnthqe4kg1oh3gdda"/>
+    </script>
+    <link href="https://kaktus.media/src/Template/Block/Header/style/Base.css?mtime=1641882284" rel="stylesheet"/>
+    <link href="https://kaktus.media/src/Template/Block/Header/style/Menu.css?mtime=1614740525" rel="stylesheet"/>
+    <link href="https://kaktus.media/src/Template/Block/Header/style/Search.css?mtime=1613731673" rel="stylesheet"/>
+    <link as="image" href="https://kaktus.media/src/Template/Block/Footer/logo.svg?mtime=1613630869" rel="preload"/>
+    <link as="image" href="https://kaktus.media/src/Template/Block/Footer/logo-hover.svg?mtime=1613706295"
+          rel="preload"/>
+    <link href="https://kaktus.media/src/Template/Base/favicon/apple-touch-icon.png?mtime=1614833168"
+          rel="apple-touch-icon" sizes="180x180"/>
+    <link href="https://kaktus.media/src/Template/Base/favicon/favicon-32x32.png?mtime=1614833169" rel="image/png"
+          sizes="32x32"/>
+    <link href="https://kaktus.media/src/Template/Base/favicon/favicon-16x16.png?mtime=1614833169" rel="image/png"
+          sizes="16x16"/>
+    <link href="https://kaktus.media/src/Template/Base/favicon/site.webmanifest?mtime=1614833170" rel="manifest"/>
+    <meta content="#da532c" name="msapplication-TileColor"/>
+    <meta content="#ffffff" name="theme-color"/>
+    <link href="https://kaktus.media/src/Template/Base/favicon/favicon.ico?mtime=1614833169" rel="icon"
+          type="image/x-icon"/>
+    <link href="https://kaktus.media/src/Template/Page/Main/Main.css?mtime=1614759475" rel="stylesheet"/>
+    <link href="https://kaktus.media/src/Template/Block/Dashboard/Dashboard.css?mtime=1639971202" rel="stylesheet"/>
+    <link href="https://kaktus.media/src/Template/Block/CompanyArticles/CompanyArticles.css?mtime=1622030052"
+          rel="stylesheet"/>
+    <link href="https://kaktus.media/src/Template/Block/Dashboard/Board/style/Base.css?mtime=1616584086"
+          rel="stylesheet"/>
+    <link href="https://kaktus.media/src/Template/Block/Dashboard/Board/style/Single.css?mtime=1614236036"
+          rel="stylesheet"/>
+    <link href="https://kaktus.media/src/Template/Block/Dashboard/Board/style/Two.css?mtime=1614668195"
+          rel="stylesheet"/>
+    <link href="https://kaktus.media/src/Template/Block/Dashboard/Board/style/Three.css?mtime=1614668195"
+          rel="stylesheet"/>
+    <link href="https://kaktus.media/src/Template/Block/Dashboard/Board/style/Fore.css?mtime=1614668195"
+          rel="stylesheet"/>
+    <link href="https://kaktus.media/src/Template/Block/Dashboard/Board/style/Five.css?mtime=1617077928"
+          rel="stylesheet"/>
+    <link href="https://kaktus.media/src/Template/Block/Dashboard/Board/style/SingleMedia.css?mtime=1613709190"
+          rel="stylesheet"/>
+    <link href="https://kaktus.media/src/Template/Block/Dashboard/Board/style/TwoMedia.css?mtime=1614668195"
+          rel="stylesheet"/>
+    <link href="https://kaktus.media/src/Template/Block/Dashboard/Board/style/ThreeMedia.css?mtime=1614668195"
+          rel="stylesheet"/>
+    <link href="https://kaktus.media/src/Template/Block/Dashboard/Board/style/ForeMedia.css?mtime=1614668195"
+          rel="stylesheet"/>
+    <link href="https://kaktus.media/src/Template/Block/Dashboard/Board/style/ThreeMediaExtend.css?mtime=1614668195"
+          rel="stylesheet"/>
+    <link href="https://kaktus.media/src/Template/Block/Dashboard/Content/Card/Card.css?mtime=1625023036"
+          rel="stylesheet"/>
+    <link href="https://kaktus.media/src/Template/Block/Dashboard/Content/Line/Line.css?mtime=1625023156"
+          rel="stylesheet"/>
+    <link href="https://kaktus.media/src/Template/Block/BannerB/BannerB.css?mtime=1614750423" rel="stylesheet"/>
+    <link href="https://kaktus.media/src/Template/Block/Dashboard/Content/CardMedia/CardMedia.css?mtime=1625023122"
+          rel="stylesheet"/>
+    <link href="https://kaktus.media/src/Template/Block/BannerB1/BannerB1.css?mtime=1614750423" rel="stylesheet"/>
+    <link href="https://kaktus.media/src/Template/Block/BannerC/BannerC.css?mtime=1614750423" rel="stylesheet"/>
+    <link href="https://kaktus.media/src/Template/Base/fonts/roboto/style.css?mtime=1613551855" rel="stylesheet"/>
+    <link href="https://kaktus.media/src/Template/Base/fonts/bitter/style.css?mtime=1614915840" rel="stylesheet"/>
+    <link href="https://kaktus.media/src/Template/Base/normalize.min.css?mtime=1614828274" rel="stylesheet"/>
+    <link href="https://kaktus.media/src/Template/Base/Base.css?mtime=1640246833" rel="stylesheet"/>
+    <link href="https://kaktus.media/src/Template/Block/BannerA/BannerA.css?mtime=1614750423" rel="stylesheet"/>
+    <link href="https://kaktus.media/src/Template/Block/Footer/Footer.css?mtime=1646201916" rel="stylesheet"/>
+    <link href="https://kaktus.media/src/Template/Block/BannerM/BannerM.css?mtime=1614750423" rel="stylesheet"/>
+    <link href="https://kaktus.media/src/Template/Block/Up/Up.css?mtime=1615437278" rel="stylesheet"/>
+</head>
+<body>
+<div class="BannerA" tabindex="-1" data-stat="bannerA">
+    <style>@media (max-width: 1239px){.bnr-a-branding{display:none !important;}}</style>
+    <div class="bnr bnr-a bnr-a-branding" data-key="kaktus/a" data-part="branding" data-type="branding"></div>
+    <div class="BannerA--parent">
+        <div class="BannerA--content">
+            <style>@media (min-width: 481px){.bnr-a-mobile{display:none !important;}}</style>
+            <div class="bnr bnr-a bnr-a-mobile" data-key="kaktus/a" data-part="mobile" data-type="banner">
+                <div style="padding-top:31.25%;"></div>
+            </div>
+            <style>
+                @media (max-width: 480px){.bnr-a-tablet{display:none !important;}}@media (min-width: 1240px){.bnr-a-tablet{display:none !important;}}
+            </style>
+            <div class="bnr bnr-a bnr-a-tablet" data-key="kaktus/a" data-part="tablet" data-type="banner">
+                <div style="padding-top:20.833333333333%;"></div>
+            </div>
+            <style>@media (max-width: 1239px){.bnr-a-desktop{display:none !important;}}</style>
+            <div class="bnr bnr-a bnr-a-desktop" data-key="kaktus/a" data-part="desktop" data-type="banner">
+                <div style="padding-top:20.491803278689%;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<header class="Header" data-stat="header">
+    <div class="Header--content">
+        <a class="Header--logo" href="https://kaktus.media/" data-stat="logo">
+            <img class="Header--logo-img"
+                 src="https://kaktus.media/src/Template/Block/Header/img/logo.svg?mtime=1613469299"
+                 alt="Логотип kaktus.media"/>
+            <img class="Header--logo-img-hover"
+                 src="https://kaktus.media/src/Template/Block/Header/img/logo-hover.svg?mtime=1613710204"
+                 alt="Логотип kaktus.media"/>
+        </a>
+        <ul class="Header--tags" data-stat="tags">
+            <li class="Header--tag" data-id="8">
+                <a class="Header--tag-link" data-stat="tag" data-stat-num="8" href="https://kaktus.media/?lable=8">
+                    Все новости </a>
+            </li>
+            <li class="Header--tag" data-id="7650">
+                <a class="Header--tag-link" data-stat="tag" data-stat-num="7650"
+                   href="https://kaktus.media/?lable=7650">
+                    Спецпроекты </a>
+            </li>
+            <li class="Header--tag" data-id="15">
+                <a class="Header--tag-link" data-stat="tag" data-stat-num="15" href="https://kaktus.media/?lable=15">
+                    Call-центр </a>
+            </li>
+            <li class="Header--tag" data-id="7612">
+                <a class="Header--tag-link" data-stat="tag" data-stat-num="7612"
+                   href="https://kaktus.media/?lable=7612">
+                    Полезное </a>
+            </li>
+            <li class="Header--tag" data-id="7613">
+                <a class="Header--tag-link" data-stat="tag" data-stat-num="7613"
+                   href="https://kaktus.media/?lable=7613">
+                    Истории </a>
+            </li>
+        </ul>
+        <button class="Header--button Header--search-button" data-stat="search button"></button>
+        <button class="Header--button Header--menu-button" data-stat="menu button"></button>
+        <a class="Header--lang" href="https://kaktus.kg/" data-stat="lang">
+<span class="Header--lang-content">
+KG </span>
+        </a>
+    </div>
+    <div class="Header--search" data-stat="search">
+        <div class="Header--search--content">
+            <form class="Header--search--form" method="get" action="https://kaktus.media/">
+                <label class="Header--search--row">
+                    <input class="Header--search--form-input" name="search" value="" placeholder="Введите запрос"/>
+                    <button class="Header--search--close" type="button" data-stat="close"></button>
+                </label>
+            </form>
+        </div>
+    </div>
+    <div class="Header--menu" data-stat="menu">
+        <ul class="Header--menu-tags" data-stat="tags">
+            <li class="Header--menu-tag Header--menu-tag--main">
+                <a class="Header--menu-tag-link" href="https://kaktus.media/" data-stat="main">
+                    Главная </a>
+            </li>
+            <li class="Header--menu-tag">
+                <a class="Header--menu-tag-link" href="https://kaktus.media/?lable=8" data-stat="tag" data-stat-num="8">
+                    Все новости </a>
+            </li>
+            <li class="Header--menu-tag">
+                <a class="Header--menu-tag-link" href="https://kaktus.media/?lable=7650" data-stat="tag"
+                   data-stat-num="7650">
+                    Спецпроекты </a>
+            </li>
+            <li class="Header--menu-tag">
+                <a class="Header--menu-tag-link" href="https://kaktus.media/?lable=15" data-stat="tag"
+                   data-stat-num="15">
+                    Call-центр </a>
+            </li>
+            <li class="Header--menu-tag">
+                <a class="Header--menu-tag-link" href="https://kaktus.media/?lable=7612" data-stat="tag"
+                   data-stat-num="7612">
+                    Полезное </a>
+            </li>
+            <li class="Header--menu-tag">
+                <a class="Header--menu-tag-link" href="https://kaktus.media/?lable=7613" data-stat="tag"
+                   data-stat-num="7613">
+                    Истории </a>
+            </li>
+        </ul>
+        <div class="Header--menu-lang">
+            <a class="Header--menu-lang-link" href="https://kaktus.kg/" target="_blank" data-stat="lang">
+                Кыргызча </a>
+        </div>
+        <div class="Header--menu-bottom">
+            <div class="Header--menu-contacts-parent" data-stat="contacts">
+                <div class="Header--menu-contacts Header--menu-contacts--redaction" data-stat="redaction">
+                    <div class="Header--menu-contacts-title">
+                        Редакция:
+                    </div>
+                    <ul class="Header--menu-contacts-list">
+                        <li class="Header--menu-contacts-contact">
+                            <a class="Header--menu-contacts-contact-link Header--menu-contacts-contact-link--mobile"
+                               href="tel:+996 (700) 62 07 60" data-stat="mobile">
+                                +996 (700) 62 07 60 </a>
+                        </li>
+                        <li class="Header--menu-contacts-contact">
+                            <a class="Header--menu-contacts-contact-link Header--menu-contacts-contact-link--email"
+                               href="/cdn-cgi/l/email-protection#deaeb7adb3bff0b5bfb5aaabad9eb9b3bfb7b2f0bdb1b3"
+                               data-stat="email">
+                                <span class="__cf_email__"
+                                      data-cfemail="f5859c869894db9e949e818086b59298949c99db969a98">[email&#160;protected]</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Header--menu-contacts Header--menu-contacts--reklama" data-stat="reklama">
+                    <div class="Header--menu-contacts-title">
+                        Отдел рекламы:
+                    </div>
+                    <ul class="Header--menu-contacts-list">
+                        <li class="Header--menu-contacts-contact">
+                            <a class="Header--menu-contacts-contact-link Header--menu-contacts-contact-link--phone"
+                               href="tel:+996 (990) 90 40 09" data-stat="phone">
+                                +996 (990) 90 40 09 </a>
+                        </li>
+                        <li class="Header--menu-contacts-contact">
+                            <a class="Header--menu-contacts-contact-link Header--menu-contacts-contact-link--phone_1"
+                               href="tel:+996 (312) 88 00 16" data-stat="phone_1">
+                                +996 (312) 88 00 16 </a>
+                        </li>
+                        <li class="Header--menu-contacts-contact">
+                            <a class="Header--menu-contacts-contact-link Header--menu-contacts-contact-link--phone_2"
+                               href="tel:+996 (701) 70 80 70" data-stat="phone_2">
+                                +996 (701) 70 80 70 </a>
+                        </li>
+                        <li class="Header--menu-contacts-contact">
+                            <a class="Header--menu-contacts-contact-link Header--menu-contacts-contact-link--phone_3"
+                               href="tel:+996 (312) 66 20 63" data-stat="phone_3">
+                                +996 (312) 66 20 63 </a>
+                        </li>
+                    </ul>
+                    <div class="Header--menu-contacts-reklama">
+                        <a class="Header--menu-contacts-reklama-link" href="https://kaktus.media/?reklama"
+                           data-stat="ad">
+                            Реклама на сайте </a>
+                    </div>
+                </div>
+            </div>
+            <ul class="Header--menu-socials" data-stat="socials">
+                <li class="Header--menu-socials-item">
+                    <a class="Header--menu-socials-item-link Header--menu-socials-item-link--rss"
+                       href="https://kaktus.media/?rss" target="_blank" data-stat="rss"></a>
+                </li>
+                <li class="Header--menu-socials-item">
+                    <a class="Header--menu-socials-item-link Header--menu-socials-item-link--facebook"
+                       href="https://www.facebook.com/kaktus.kyrgyzstan/" target="_blank" data-stat="facebook"></a>
+                </li>
+                <li class="Header--menu-socials-item">
+                    <a class="Header--menu-socials-item-link Header--menu-socials-item-link--odnoklassniki"
+                       href="https://ok.ru/kaktus.media" target="_blank" data-stat="odnoklassniki"></a>
+                </li>
+                <li class="Header--menu-socials-item">
+                    <a class="Header--menu-socials-item-link Header--menu-socials-item-link--twitter"
+                       href="https://twitter.com/kaktus__media" target="_blank" data-stat="twitter"></a>
+                </li>
+                <li class="Header--menu-socials-item">
+                    <a class="Header--menu-socials-item-link Header--menu-socials-item-link--youtube"
+                       href="https://www.youtube.com/channel/UCzJdIIIJLJtCOQ53vCcRVaQ" target="_blank"
+                       data-stat="youtube"></a>
+                </li>
+                <li class="Header--menu-socials-item">
+                    <a class="Header--menu-socials-item-link Header--menu-socials-item-link--instagram"
+                       href="https://www.instagram.com/kaktus__media/" target="_blank" data-stat="instagram"></a>
+                </li>
+                <li class="Header--menu-socials-item">
+                    <a class="Header--menu-socials-item-link Header--menu-socials-item-link--telegram"
+                       href="https://t.me/kaktus_mediakg" target="_blank" data-stat="telegram"></a>
+                </li>
+                <li class="Header--menu-socials-item">
+                    <a class="Header--menu-socials-item-link Header--menu-socials-item-link--tiktok"
+                       href="https://www.tiktok.com/@kaktus.media?" target="_blank" data-stat="tiktok"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="Main" data-stat="main">
+    <div class="Main--all_news">
+        <a class="Main--all_news-link" href="https://kaktus.media/?lable=8" data-stat="allNews">
+            Все новости </a>
+    </div>
+    <div class="Dashboard--parent" data-stat="dashboard">
+        <div class="Dashboard">
+            <div class="Dashboard--group">
+                <div class="Dashboard--group-content">
+                    <div class="Dashboard--group-boards">
+                        <div class="Dashboard--board" data-id="0.3334541501004522" data-stat="board" data-stat-num="1">
+                            <div class="Dashboard-Board Dashboard-Board----FORE_MEDIA" data-stat="FORE_MEDIA">
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/457038_vooryjennye_sily_azerbaydjana_voshli_v_nagornyy_karabah.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-26_23-24-39_317684.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-26_23-24-39_317684.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-26_23-24-39_317684.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-26_23-24-39_317684.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/457038_vooryjennye_sily_azerbaydjana_voshli_v_nagornyy_karabah.html"
+                                           data-stat="article">
+                                            Вооруженные силы Азербайджана вошли в Нагорный Карабах<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="457038"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/457036_chetyrmia_kadrami:_almazbek_atambaev_i_sadyr_japarov_v_2017_gody_i_seychas.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-26_22-49-49_642234.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-26_22-49-49_642234.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-26_22-49-49_642234.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-26_22-49-49_642234.jpg"/>
+                                            <span class="Dashboard-Content-Card--ico Dashboard-Content-Card--ico--photo"></span>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/457036_chetyrmia_kadrami:_almazbek_atambaev_i_sadyr_japarov_v_2017_gody_i_seychas.html"
+                                           data-stat="article">
+                                            Четырьмя кадрами: Алмазбек Атамбаев и Садыр Жапаров в 2017 году и
+                                            сейчас<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="457036"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/457037_bayden_nazval_pytina_miasnikom._v_kremle_otvetili.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-26_23-15-06_491049.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-26_23-15-06_491049.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-26_23-15-06_491049.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-26_23-15-06_491049.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/457037_bayden_nazval_pytina_miasnikom._v_kremle_otvetili.html"
+                                           data-stat="article">
+                                            Байден назвал Путина &quot;мясником&quot;. В Кремле ответили<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="457037"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/457034_jyrnalisty_temirov_live_vyiavili_sviaz_26_letnego_zamglavy_gns_s_akylbekom_japarovym.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-26_22-01-30_944468.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-26_22-01-30_944468.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-26_22-01-30_944468.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-26_22-01-30_944468.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/457034_jyrnalisty_temirov_live_vyiavili_sviaz_26_letnego_zamglavy_gns_s_akylbekom_japarovym.html"
+                                           data-stat="article">
+                                            Журналисты Temirov Live выявили связь 26-летнего замглавы ГНС с Акылбеком
+                                            Жапаровым<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="457034"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Dashboard--board" data-id="0.3328452195849607" data-stat="board" data-stat-num="2">
+                            <div class="Dashboard-Board Dashboard-Board----FORE" data-stat="FORE">
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Line">
+                                        <a class="Dashboard-Content-Line--name"
+                                           href="https://kaktus.media/doc/456779_chto_s_cenami_na_dvyhkomnatnye_kvartiry_v_bishkeke._sravnenie_s_proshlym_godom.html"
+                                           data-stat="article">
+                                            Что с ценами на двухкомнатные квартиры в Бишкеке. Сравнение с прошлым
+                                            годом<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="456779"></span>
+                                        </a>
+                                        <div class="Dashboard-Content-Line--category">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Line">
+                                        <a class="Dashboard-Content-Line--name"
+                                           href="https://kaktus.media/doc/457035_ssha_planiryut_vvesti_vtorichnye_sankcii_v_otnoshenii_stran_sotrydnichaushih_s_rossiey.html"
+                                           data-stat="article">
+                                            США планируют ввести вторичные санкции в отношении стран, сотрудничающих с
+                                            Россией<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="457035"></span>
+                                        </a>
+                                        <div class="Dashboard-Content-Line--category">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Line">
+                                        <a class="Dashboard-Content-Line--name"
+                                           href="https://kaktus.media/doc/457039_franciia_vpervye_za_30_let_perebrosila_v_atlantiky_atomnye_podlodki_dlia_sderjivaniia_rossii.html"
+                                           data-stat="article">
+                                            Франция впервые за 30 лет перебросила в Атлантику атомные подлодки для
+                                            сдерживания России<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="457039"></span>
+                                        </a>
+                                        <div class="Dashboard-Content-Line--category">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Line">
+                                        <a class="Dashboard-Content-Line--name"
+                                           href="https://kaktus.media/doc/457040_evropa_nachala_snijat_zavisimost_ot_rossiyskogo_gaza.html"
+                                           data-stat="article">
+                                            Европа начала снижать зависимость от российского газа<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="457040"></span>
+                                        </a>
+                                        <div class="Dashboard-Content-Line--category">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Dashboard--CompanyArticles">
+        <div class="CompanyArticles" data-stat="tagArticles Новостикомпаний">
+            <div class="CompanyArticles--content">
+                <a class="CompanyArticles--title" href="https://kaktus.media/?lable=7121" data-stat="tag">
+                    Новости компаний </a>
+                <div class="CompanyArticles--list">
+                    <div class="CompanyArticles--article">
+                        <a class="CompanyArticles--article-image"
+                           href="https://kaktus.media/doc/457020_kak_obezopasit_sebia_ot_nepredvidennyh_trydnostey.html"
+                           data-stat="article image" data-stat-num="0">
+                            <img class="CompanyArticles--article-image-img lazyload"
+                                 data-src="https://data.kaktus.media/image/medium/2022-03-26_16-21-52_448430.jpg"/>
+                        </a>
+                        <div class="CompanyArticles--article-name-parent">
+                            <a class="CompanyArticles--article-name"
+                               href="https://kaktus.media/doc/457020_kak_obezopasit_sebia_ot_nepredvidennyh_trydnostey.html"
+                               data-stat="article" data-stat-num="0">
+                                Как обезопасить себя от непредвиденных трудностей? </a>
+                        </div>
+                    </div>
+                    <div class="CompanyArticles--article">
+                        <a class="CompanyArticles--article-image"
+                           href="https://kaktus.media/doc/456998_kompaniia_megacom_zapystila_novye_bazovye_stancii_v_batkenskoy_oblasti.html"
+                           data-stat="article image" data-stat-num="1">
+                            <img class="CompanyArticles--article-image-img lazyload"
+                                 data-src="https://data.kaktus.media/image/medium/2022-03-26_12-08-32_837526.jpg"/>
+                        </a>
+                        <div class="CompanyArticles--article-name-parent">
+                            <a class="CompanyArticles--article-name"
+                               href="https://kaktus.media/doc/456998_kompaniia_megacom_zapystila_novye_bazovye_stancii_v_batkenskoy_oblasti.html"
+                               data-stat="article" data-stat-num="1">
+                                Компания MegaCom запустила новые базовые станции в Баткенской области </a>
+                        </div>
+                    </div>
+                    <div class="CompanyArticles--article">
+                        <a class="CompanyArticles--article-image"
+                           href="https://kaktus.media/doc/456969_pervoe_predstavitelstvo_kommercheskogo_banka_kyrgyzstan.html"
+                           data-stat="article image" data-stat-num="2">
+                            <img class="CompanyArticles--article-image-img lazyload"
+                                 data-src="https://data.kaktus.media/image/medium/2022-03-25_18-24-19_967722.jpg"/>
+                        </a>
+                        <div class="CompanyArticles--article-name-parent">
+                            <a class="CompanyArticles--article-name"
+                               href="https://kaktus.media/doc/456969_pervoe_predstavitelstvo_kommercheskogo_banka_kyrgyzstan.html"
+                               data-stat="article" data-stat-num="2">
+                                Первое представительство Коммерческого Банка КЫРГЫЗСТАН </a>
+                        </div>
+                    </div>
+                    <div class="CompanyArticles--article">
+                        <a class="CompanyArticles--article-image"
+                           href="https://kaktus.media/doc/456469_den_otkrytyh_dverey_v_mya.html"
+                           data-stat="article image" data-stat-num="3">
+                            <img class="CompanyArticles--article-image-img lazyload"
+                                 data-src="https://data.kaktus.media/image/medium/2022-03-17_16-19-53_482304.jpg"/>
+                        </a>
+                        <div class="CompanyArticles--article-name-parent">
+                            <a class="CompanyArticles--article-name"
+                               href="https://kaktus.media/doc/456469_den_otkrytyh_dverey_v_mya.html" data-stat="article"
+                               data-stat-num="3">
+                                День открытых дверей в МУА </a>
+                        </div>
+                    </div>
+                    <div class="CompanyArticles--article">
+                        <a class="CompanyArticles--article-image"
+                           href="https://kaktus.media/doc/456968_smotrite_sportivnye_telekanaly_i_priamye_transliacii_onlayn_besplatno.html"
+                           data-stat="article image" data-stat-num="4">
+                            <img class="CompanyArticles--article-image-img lazyload"
+                                 data-src="https://data.kaktus.media/image/medium/2022-03-25_17-29-34_842151.jpg"/>
+                        </a>
+                        <div class="CompanyArticles--article-name-parent">
+                            <a class="CompanyArticles--article-name"
+                               href="https://kaktus.media/doc/456968_smotrite_sportivnye_telekanaly_i_priamye_transliacii_onlayn_besplatno.html"
+                               data-stat="article" data-stat-num="4">
+                                Смотрите спортивные телеканалы и прямые трансляции онлайн бесплатно! </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Dashboard--group-blockB">
+        <div class="Dashboard--group-content blockB">
+            <div class="BannerB" data-stat="bannerB">
+                <style>@media (min-width: 481px){.bnr-b-mobile{display:none !important;}}</style>
+                <div class="bnr bnr-b bnr-b-mobile" data-key="kaktus/b" data-part="mobile" data-type="banner">
+                    <div style="padding-top:31.25%;"></div>
+                </div>
+                <style>
+                    @media (max-width: 480px){.bnr-b-tablet{display:none !important;}}@media (min-width: 1240px){.bnr-b-tablet{display:none !important;}}
+                </style>
+                <div class="bnr bnr-b bnr-b-tablet" data-key="kaktus/b" data-part="tablet" data-type="banner">
+                    <div style="padding-top:20.833333333333%;"></div>
+                </div>
+                <style>@media (max-width: 1239px){.bnr-b-desktop{display:none !important;}}</style>
+                <div class="bnr bnr-b bnr-b-desktop" data-key="kaktus/b" data-part="desktop" data-type="banner">
+                    <div style="padding-top:12.295081967213%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Dashboard--parent" data-stat="dashboard">
+        <div class="Dashboard">
+            <div class="Dashboard--group">
+                <div class="Dashboard--group-content">
+                    <div class="Dashboard--group-boards">
+                        <div class="Dashboard--board" data-id="0.9520441218720712" data-stat="board" data-stat-num="3">
+                            <div class="Dashboard-Board Dashboard-Board----FIVE" data-stat="FIVE">
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-CardMedia">
+                                        <a class="Dashboard-Content-CardMedia--image"
+                                           href="https://kaktus.media/doc/457029_pochemy_v_kyrgyzstane_vyrosli_ceny_na_bymagy_a4_obiasnenie_ot_antimonopolnogo_organa.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-CardMedia--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-26_19-12-43_838416.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-26_19-12-43_838416.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) 720px,
+                            (min-width: 1240px) calc((1220px / 2) - 30px),
+                        " data-src="https://data.kaktus.media/image/big/2022-03-26_19-12-43_838416.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-26_19-12-43_838416.jpg"
+                                                 loading="lazy"/>
+                                        </a>
+                                        <a class="Dashboard-Content-CardMedia--name"
+                                           href="https://kaktus.media/doc/457029_pochemy_v_kyrgyzstane_vyrosli_ceny_na_bymagy_a4_obiasnenie_ot_antimonopolnogo_organa.html"
+                                           data-stat="article">
+                                            Почему в Кыргызстане выросли цены на бумагу А4? Объяснение от
+                                            антимонопольного органа<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="457029"></span>
+                                        </a>
+                                        <div class="Dashboard-Content-CardMedia--category">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Line">
+                                        <a class="Dashboard-Content-Line--name"
+                                           href="https://kaktus.media/doc/457031_delo_novogo_oligarha._osvobojden_ot_doljnosti_prokyror_batkenskoy_oblasti.html"
+                                           data-stat="article">
+                                            &quot;Дело нового олигарха&quot;. Освобожден от должности прокурор
+                                            Баткенской области<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="457031"></span>
+                                        </a>
+                                        <div class="Dashboard-Content-Line--category">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Line">
+                                        <a class="Dashboard-Content-Line--name"
+                                           href="https://kaktus.media/doc/457028_sotrydniki_gknb_zaderjali_i._o._nachalnika_slyjby_sydoispolniteley_oktiabrskogo_rayona.html"
+                                           data-stat="article">
+                                            Сотрудники ГКНБ задержали и. о. начальника службы судоисполнителей
+                                            Октябрьского района<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="457028"></span>
+                                        </a>
+                                        <div class="Dashboard-Content-Line--category">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Line">
+                                        <a class="Dashboard-Content-Line--name"
+                                           href="https://kaktus.media/doc/457030_v_bishkeke_kyrs_dollara_v_kommercheskih_bankah_ypal_do_89_somov.html"
+                                           data-stat="article">
+                                            В Бишкеке курс доллара в коммерческих банках упал до 89 сомов<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="457030"></span>
+                                        </a>
+                                        <div class="Dashboard-Content-Line--category">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Line">
+                                        <a class="Dashboard-Content-Line--name"
+                                           href="https://kaktus.media/doc/457033_obeshala_kypit_mashiny._v_bishkeke_58_letnuu_jenshiny_podozrevaut_v_moshennichestve.html"
+                                           data-stat="article">
+                                            Обещала купить машину. В Бишкеке 58-летнюю женщину подозревают в
+                                            мошенничестве<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="457033"></span>
+                                        </a>
+                                        <div class="Dashboard-Content-Line--category">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Dashboard--board" data-id="0.5500045645941216" data-stat="board" data-stat-num="4">
+                            <div class="Dashboard-Board Dashboard-Board----FIVE" data-stat="FIVE">
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-CardMedia">
+                                        <a class="Dashboard-Content-CardMedia--image"
+                                           href="https://kaktus.media/doc/457026_norvejskiy_helsinkskiy_komitet_prokommentiroval_zaderjanie_nyrbeka_toktakynova.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-CardMedia--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-26_17-56-26_431154.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-26_17-56-26_431154.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) 720px,
+                            (min-width: 1240px) calc((1220px / 2) - 30px),
+                        " data-src="https://data.kaktus.media/image/big/2022-03-26_17-56-26_431154.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-26_17-56-26_431154.jpg"
+                                                 loading="lazy"/>
+                                        </a>
+                                        <a class="Dashboard-Content-CardMedia--name"
+                                           href="https://kaktus.media/doc/457026_norvejskiy_helsinkskiy_komitet_prokommentiroval_zaderjanie_nyrbeka_toktakynova.html"
+                                           data-stat="article">
+                                            Норвежский Хельсинкский комитет прокомментировал задержание Нурбека
+                                            Токтакунова<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="457026"></span>
+                                        </a>
+                                        <div class="Dashboard-Content-CardMedia--category">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Line">
+                                        <a class="Dashboard-Content-Line--name"
+                                           href="https://kaktus.media/doc/457004_skandal_v_sele_ken_bylyn._versiia_vtoroy_storony.html"
+                                           data-stat="article">
+                                            Скандал в селе Кен-Булун. Версия второй стороны<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="457004"></span>
+                                        </a>
+                                        <div class="Dashboard-Content-Line--category">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Line">
+                                        <a class="Dashboard-Content-Line--name"
+                                           href="https://kaktus.media/doc/457027_po_porycheniu_mera_demontirovali_zabor_vokryg_merii_bishkeka_i_gy_kyrgyzstandart_foto.html"
+                                           data-stat="article">
+                                            По поручению мэра демонтировали забор вокруг мэрии Бишкека и ГУ &quot;Кыргызстандарт&quot;
+                                            (фото)<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="457027"></span>
+                                        </a>
+                                        <div class="Dashboard-Content-Line--category">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Line">
+                                        <a class="Dashboard-Content-Line--name"
+                                           href="https://kaktus.media/doc/457025_myjchiny_vyvezli_za_selo_izbili_i_otobrali_mashiny._zaderjany_podozrevaemye.html"
+                                           data-stat="article">
+                                            Мужчину вывезли за село, избили и отобрали машину. Задержаны
+                                            подозреваемые<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="457025"></span>
+                                        </a>
+                                        <div class="Dashboard-Content-Line--category">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Line">
+                                        <a class="Dashboard-Content-Line--name"
+                                           href="https://kaktus.media/doc/457023_y_jenshiny_ykrali_9_par_narychnyh_chasov_dengi_i_ykrasheniia._obshiy_ysherb_590_tysiach_somov.html"
+                                           data-stat="article">
+                                            У женщины украли 9 пар наручных часов, деньги и украшения. Общий ущерб - 590
+                                            тысяч сомов<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="457023"></span>
+                                        </a>
+                                        <div class="Dashboard-Content-Line--category">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="BannerB1" data-stat="bannerB1">
+                            <style>@media (min-width: 481px){.bnr-b1-mobile{display:none !important;}}</style>
+                            <div class="bnr bnr-b1 bnr-b1-mobile" data-key="kaktus/b1" data-part="mobile"
+                                 data-type="banner">
+                                <div style="padding-top:31.25%;"></div>
+                            </div>
+                            <style>
+                                @media (max-width: 480px){.bnr-b1-tablet{display:none !important;}}@media (min-width: 1240px){.bnr-b1-tablet{display:none !important;}}
+                            </style>
+                            <div class="bnr bnr-b1 bnr-b1-tablet" data-key="kaktus/b1" data-part="tablet"
+                                 data-type="banner">
+                                <div style="padding-top:20.833333333333%;"></div>
+                            </div>
+                            <style>@media (max-width: 1239px){.bnr-b1-desktop{display:none !important;}}</style>
+                            <div class="bnr bnr-b1 bnr-b1-desktop" data-key="kaktus/b1" data-part="desktop"
+                                 data-type="banner">
+                                <div style="padding-top:12.295081967213%;"></div>
+                            </div>
+                        </div>
+                        <div class="Dashboard--board" data-id="0.24974142521464548" data-stat="board" data-stat-num="5">
+                            <div class="Dashboard-Board Dashboard-Board----FORE_MEDIA" data-stat="FORE_MEDIA">
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/456996_znachit_tak_nado_bylo._26_letniy_zamglavy_gns_rasskazal_podrobnosti_o_svoem_naznachenii.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-26_16-35-34_209584.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-26_16-35-34_209584.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-26_16-35-34_209584.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-26_16-35-34_209584.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/456996_znachit_tak_nado_bylo._26_letniy_zamglavy_gns_rasskazal_podrobnosti_o_svoem_naznachenii.html"
+                                           data-stat="article">
+                                            &quot;Значит, так надо было&quot;. 26-летний замглавы ГНС рассказал
+                                            подробности о своем назначении<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="456996"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/456985_dobrye_novosti_ot_kaktus.media_za_nedelu.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-26_12-45-18_662974.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-26_12-45-18_662974.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-26_12-45-18_662974.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-26_12-45-18_662974.jpg"/>
+                                            <span class="Dashboard-Content-Card--ico Dashboard-Content-Card--ico--photo"></span>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/456985_dobrye_novosti_ot_kaktus.media_za_nedelu.html"
+                                           data-stat="article">
+                                            Добрые новости от Kaktus.media за неделю<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="456985"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/457022_nacbank_ytverdil_gylshat_asylbaevy_dlia_raboty_v_banke.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-26_16-41-07_964386.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-26_16-41-07_964386.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-26_16-41-07_964386.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-26_16-41-07_964386.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/457022_nacbank_ytverdil_gylshat_asylbaevy_dlia_raboty_v_banke.html"
+                                           data-stat="article">
+                                            Нацбанк утвердил Гульшат Асылбаеву для работы в банке<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="457022"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/457021_apparat_ombydsmena_vyiavil_processyalnye_narysheniia_v_zaderjanii_nyrbeka_toktakynova.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-26_16-05-43_802281.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-26_16-05-43_802281.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-26_16-05-43_802281.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-26_16-05-43_802281.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/457021_apparat_ombydsmena_vyiavil_processyalnye_narysheniia_v_zaderjanii_nyrbeka_toktakynova.html"
+                                           data-stat="article">
+                                            Аппарат омбудсмена выявил процессуальные нарушения в задержании Нурбека
+                                            Токтакунова<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="457021"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Dashboard--board" data-id="0.22219828195227498" data-stat="board" data-stat-num="6">
+                            <div class="Dashboard-Board Dashboard-Board----FORE_MEDIA" data-stat="FORE_MEDIA">
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/457011_nyrbek_toktakynov_napisal_pismo_iz_svoey_kamery._o_chem_ono.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-26_15-45-50_628674.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-26_15-45-50_628674.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-26_15-45-50_628674.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-26_15-45-50_628674.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/457011_nyrbek_toktakynov_napisal_pismo_iz_svoey_kamery._o_chem_ono.html"
+                                           data-stat="article">
+                                            Нурбек Токтакунов написал письмо из своей камеры. О чем оно?<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="457011"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/457009_bishkekchanka_rasskazala_iz_za_chego_ee_izbil_byvshiy_myj.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-26_15-32-36_402311.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-26_15-32-36_402311.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-26_15-32-36_402311.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-26_15-32-36_402311.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/457009_bishkekchanka_rasskazala_iz_za_chego_ee_izbil_byvshiy_myj.html"
+                                           data-stat="article">
+                                            Бишкекчанка рассказала, из-за чего ее избил бывший муж<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="457009"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/457013_kyrgyzstan_i_kazahstan_obsydili_vzaimnye_gryzovye_perevozki._o_chem_dogovorilis.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-26_15-36-14_437340.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-26_15-36-14_437340.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-26_15-36-14_437340.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-26_15-36-14_437340.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/457013_kyrgyzstan_i_kazahstan_obsydili_vzaimnye_gryzovye_perevozki._o_chem_dogovorilis.html"
+                                           data-stat="article">
+                                            Кыргызстан и Казахстан обсудили взаимные грузовые перевозки. О чем
+                                            договорились<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="457013"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/457003_nacbank_oproverg_informaciu_o_vvedenii_v_oborot_ryblia_v_kyrgyzstane.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-26_15-01-22_804588.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-26_15-01-22_804588.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-26_15-01-22_804588.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-26_15-01-22_804588.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/457003_nacbank_oproverg_informaciu_o_vvedenii_v_oborot_ryblia_v_kyrgyzstane.html"
+                                           data-stat="article">
+                                            Нацбанк опроверг информацию о введении в оборот рубля в Кыргызстане<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="457003"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="BannerC" data-stat="bannerC">
+                            <style>@media (min-width: 481px){.bnr-c-mobile{display:none !important;}}</style>
+                            <div class="bnr bnr-c bnr-c-mobile" data-key="kaktus/c" data-part="mobile"
+                                 data-type="banner">
+                                <div style="padding-top:31.25%;"></div>
+                            </div>
+                            <style>
+                                @media (max-width: 480px){.bnr-c-tablet{display:none !important;}}@media (min-width: 1240px){.bnr-c-tablet{display:none !important;}}
+                            </style>
+                            <div class="bnr bnr-c bnr-c-tablet" data-key="kaktus/c" data-part="tablet"
+                                 data-type="banner">
+                                <div style="padding-top:20.833333333333%;"></div>
+                            </div>
+                            <style>@media (max-width: 1239px){.bnr-c-desktop{display:none !important;}}</style>
+                            <div class="bnr bnr-c bnr-c-desktop" data-key="kaktus/c" data-part="desktop"
+                                 data-type="banner">
+                                <div style="padding-top:12.295081967213%;"></div>
+                            </div>
+                        </div>
+                        <div class="Dashboard--board" data-id="0.8397215757059404" data-stat="board" data-stat-num="7">
+                            <div class="Dashboard-Board Dashboard-Board----FORE_MEDIA" data-stat="FORE_MEDIA">
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/456889_dtp_na_dorogah_kyrgyzstana._mogyt_li_tehnologii_sokratit_avariynost.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-26_11-26-09_415223.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-26_11-26-09_415223.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-26_11-26-09_415223.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-26_11-26-09_415223.jpg"/>
+                                            <span class="Dashboard-Content-Card--ico Dashboard-Content-Card--ico--photo"></span>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/456889_dtp_na_dorogah_kyrgyzstana._mogyt_li_tehnologii_sokratit_avariynost.html"
+                                           data-stat="article">
+                                            ДТП на дорогах Кыргызстана. Могут ли технологии сократить аварийность?<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="456889"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/456885_bydyshaia_elita_strany._nagradili_pobediteley_respyblikanskoy_olimpiady_shkolnikov.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-26_15-08-31_293183_w.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-26_15-08-31_293183_w.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-26_15-08-31_293183_w.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-26_15-08-31_293183_w.jpg"/>
+                                            <span class="Dashboard-Content-Card--ico Dashboard-Content-Card--ico--photo"></span>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/456885_bydyshaia_elita_strany._nagradili_pobediteley_respyblikanskoy_olimpiady_shkolnikov.html"
+                                           data-stat="article">
+                                            &quot;Будущая элита страны&quot;. Наградили победителей республиканской
+                                            олимпиады школьников<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="456885"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/457007_klienty_jilishnogo_kooperativa_s_line_vyshli_na_miting_video.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-26_14-51-08_548795_w.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-26_14-51-08_548795_w.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-26_14-51-08_548795_w.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-26_14-51-08_548795_w.jpg"/>
+                                            <span class="Dashboard-Content-Card--ico Dashboard-Content-Card--ico--photo"></span>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/457007_klienty_jilishnogo_kooperativa_s_line_vyshli_na_miting_video.html"
+                                           data-stat="article">
+                                            Клиенты жилищного кооператива S-Line вышли на митинг (видео)<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="457007"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/457002_depytat_predlojil_davat_grajdanstvo_kyrgyzstana_v_obmen_na_investicii.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-26_14-16-48_351323.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-26_14-16-48_351323.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-26_14-16-48_351323.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-26_14-16-48_351323.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/457002_depytat_predlojil_davat_grajdanstvo_kyrgyzstana_v_obmen_na_investicii.html"
+                                           data-stat="article">
+                                            Депутат предложил давать гражданство Кыргызстана в обмен на инвестиции<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="457002"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Dashboard--board" data-id="0.7696685474089053" data-stat="board" data-stat-num="8">
+                            <div class="Dashboard-Board Dashboard-Board----FIVE" data-stat="FIVE">
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-CardMedia">
+                                        <a class="Dashboard-Content-CardMedia--image"
+                                           href="https://kaktus.media/doc/457001_v_skvere_im._gorkogo_sobralis_ludi_v_podderjky_ykrainy_foto_i_video.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-CardMedia--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-26_13-46-43_841846.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-26_13-46-43_841846.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) 720px,
+                            (min-width: 1240px) calc((1220px / 2) - 30px),
+                        " data-src="https://data.kaktus.media/image/big/2022-03-26_13-46-43_841846.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-26_13-46-43_841846.jpg"
+                                                 loading="lazy"/>
+                                            <span class="Dashboard-Content-CardMedia--ico Dashboard-Content-CardMedia--ico--photo"></span>
+                                        </a>
+                                        <a class="Dashboard-Content-CardMedia--name"
+                                           href="https://kaktus.media/doc/457001_v_skvere_im._gorkogo_sobralis_ludi_v_podderjky_ykrainy_foto_i_video.html"
+                                           data-stat="article">
+                                            В сквере им. Горького собрались люди в поддержку Украины (фото и видео)<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="457001"></span>
+                                        </a>
+                                        <div class="Dashboard-Content-CardMedia--category">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Line">
+                                        <a class="Dashboard-Content-Line--name"
+                                           href="https://kaktus.media/doc/456993_o_prezidente_i_korifeiah._alymkadyr_beyshenaliev_prokommentiroval_svoy_vcherashniy_kommentariy.html"
+                                           data-stat="article">
+                                            О президенте и корифеях. Алымкадыр Бейшеналиев прокомментировал свой
+                                            вчерашний комментарий<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="456993"></span>
+                                        </a>
+                                        <div class="Dashboard-Content-Line--category">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Line">
+                                        <a class="Dashboard-Content-Line--name"
+                                           href="https://kaktus.media/doc/456992_na_poly_spal._advokaty_privezli_v_kamery_nyrbeka_toktakynova_raskladyshky_video.html"
+                                           data-stat="article">
+                                            &quot;На полу спал&quot;. Адвокаты привезли в камеру Нурбека Токтакунова
+                                            раскладушку (видео)<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="456992"></span>
+                                        </a>
+                                        <div class="Dashboard-Content-Line--category">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Line">
+                                        <a class="Dashboard-Content-Line--name"
+                                           href="https://kaktus.media/doc/456988_26_letniy_zampred_gns_islambek_kydyrgychev_zavalival_ekzameny_po_predmety_nalogooblojenie.html"
+                                           data-stat="article">
+                                            26-летний зампред ГНС Исламбек Кыдыргычев заваливал экзамены по предмету
+                                            налогообложение<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="456988"></span>
+                                        </a>
+                                        <div class="Dashboard-Content-Line--category">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Line">
+                                        <a class="Dashboard-Content-Line--name"
+                                           href="https://kaktus.media/doc/456999_okolo_orto_tokoyskogo_vodohranilisha_nashli_taynik_s_oryjiem_i_boepripasami_foto.html"
+                                           data-stat="article">
+                                            Около Орто-Токойского водохранилища нашли тайник с оружием и боеприпасами
+                                            (фото)<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="456999"></span>
+                                        </a>
+                                        <div class="Dashboard-Content-Line--category">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Dashboard--board" data-id="0.7153087678881951" data-stat="board" data-stat-num="9">
+                            <div class="Dashboard-Board Dashboard-Board----FORE_MEDIA" data-stat="FORE_MEDIA">
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/456647_pochemy_nado_priyti_v_shoyrymy_romantic_premera_i_aero_neskolko_argymentov_za.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-26_11-35-00_336563.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-26_11-35-00_336563.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-26_11-35-00_336563.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-26_11-35-00_336563.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/456647_pochemy_nado_priyti_v_shoyrymy_romantic_premera_i_aero_neskolko_argymentov_za.html"
+                                           data-stat="article">
+                                            Почему надо прийти в шоурумы Romantic, &quot;Премьера&quot; и &quot;АЭРО&quot;?
+                                            Несколько аргументов за<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="456647"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/456995_kyrs_valut_v_kommercheskih_bankah_na_26_marta._i_tyt_dollar_prodoljaet_deshevet.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-26_12-35-06_512510.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-26_12-35-06_512510.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-26_12-35-06_512510.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-26_12-35-06_512510.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/456995_kyrs_valut_v_kommercheskih_bankah_na_26_marta._i_tyt_dollar_prodoljaet_deshevet.html"
+                                           data-stat="article">
+                                            Курс валют в коммерческих банках на 26 марта. И тут доллар продолжает
+                                            дешеветь<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="456995"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/456997_anjelika_reshila_prodat_svoy_akkaynt_v_instagram_za_3_mln_somov.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-26_12-21-52_661661.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-26_12-21-52_661661.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-26_12-21-52_661661.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-26_12-21-52_661661.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/456997_anjelika_reshila_prodat_svoy_akkaynt_v_instagram_za_3_mln_somov.html"
+                                           data-stat="article">
+                                            Анжелика решила продать свой аккаунт в Instagram за 3 млн сомов<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="456997"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/456994_gde_i_kem_rabotal_26_letniy_zampredsedatelia_nalogovoy_slyjby_rezume.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-26_12-03-31_615274.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-26_12-03-31_615274.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-26_12-03-31_615274.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-26_12-03-31_615274.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/456994_gde_i_kem_rabotal_26_letniy_zampredsedatelia_nalogovoy_slyjby_rezume.html"
+                                           data-stat="article">
+                                            Где и кем работал 26-летний зампредседателя налоговой службы? Резюме<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="456994"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Dashboard--group">
+                <div class="Dashboard--group-content">
+                    <div class="Dashboard--group-title">
+                        Про цены
+                    </div>
+                    <div class="Dashboard--group-boards">
+                        <div class="Dashboard--board" data-id="0.8244083956670551" data-stat="board" data-stat-num="10">
+                            <div class="Dashboard-Board Dashboard-Board----THREE_MEDIA" data-stat="THREE_MEDIA">
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/456875_chto_s_cenami_na_trehkomnatnye_kvartiry_v_bishkeke.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-24_15-53-43_417601.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-24_15-53-43_417601.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-24_15-53-43_417601.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-24_15-53-43_417601.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/456875_chto_s_cenami_na_trehkomnatnye_kvartiry_v_bishkeke.html"
+                                           data-stat="article">
+                                            Что с ценами на трехкомнатные квартиры в Бишкеке?<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="456875"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/456720_fermery_nesyt_ybytki._kak_mogyt_izmenitsia_ceny_na_miaso_video.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-23_13-33-40_937250_w.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-23_13-33-40_937250_w.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-23_13-33-40_937250_w.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-23_13-33-40_937250_w.jpg"/>
+                                            <span class="Dashboard-Content-Card--ico Dashboard-Content-Card--ico--photo"></span>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/456720_fermery_nesyt_ybytki._kak_mogyt_izmenitsia_ceny_na_miaso_video.html"
+                                           data-stat="article">
+                                            Фермеры несут убытки. Как могут измениться цены на мясо (видео)<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="456720"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/456879_s_prilavkov_bishkeka_smetaut_bymagy_a4._vse_kanctovary_podorojali.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-24_17-20-11_667223_w.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-24_17-20-11_667223_w.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-24_17-20-11_667223_w.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-24_17-20-11_667223_w.jpg"/>
+                                            <span class="Dashboard-Content-Card--ico Dashboard-Content-Card--ico--photo"></span>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/456879_s_prilavkov_bishkeka_smetaut_bymagy_a4._vse_kanctovary_podorojali.html"
+                                           data-stat="article">
+                                            С прилавков Бишкека сметают бумагу А4. Все канцтовары подорожали<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="456879"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Dashboard--group">
+                <div class="Dashboard--group-content">
+                    <div class="Dashboard--group-title">
+                        В мире
+                    </div>
+                    <div class="Dashboard--group-boards">
+                        <div class="Dashboard--board" data-id="0.2534829888178458" data-stat="board" data-stat-num="11">
+                            <div class="Dashboard-Board Dashboard-Board----FORE_MEDIA" data-stat="FORE_MEDIA">
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/456949_poiavilos_oshibochnoe_soobshenie_o_smerti_vladimira_jirinovskogo._vozmojen_skandal.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-25_14-54-39_170957.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-25_14-54-39_170957.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-25_14-54-39_170957.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-25_14-54-39_170957.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/456949_poiavilos_oshibochnoe_soobshenie_o_smerti_vladimira_jirinovskogo._vozmojen_skandal.html"
+                                           data-stat="article">
+                                            Появилось ошибочное сообщение о смерти Владимира Жириновского. Возможен
+                                            скандал?<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="456949"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/457042_ymerla_26_letniaia_model_playboy_lidiia_ponomareva.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-26_23-48-51_818042.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-26_23-48-51_818042.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-26_23-48-51_818042.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-26_23-48-51_818042.jpg"/>
+                                            <span class="Dashboard-Content-Card--ico Dashboard-Content-Card--ico--photo"></span>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/457042_ymerla_26_letniaia_model_playboy_lidiia_ponomareva.html"
+                                           data-stat="article">
+                                            Умерла 26-летняя модель Playboy Лидия Пономарева<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="457042"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/456914_nato_trebyet_ot_rossii_peremiriia._smi_ob_ykraine_i_sankciiah_protiv_rf.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-25_08-31-40_737091.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-25_08-31-40_737091.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-25_08-31-40_737091.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-25_08-31-40_737091.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/456914_nato_trebyet_ot_rossii_peremiriia._smi_ob_ykraine_i_sankciiah_protiv_rf.html"
+                                           data-stat="article">
+                                            НАТО требует от России перемирия. СМИ об Украине и санкциях против РФ<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="456914"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/457041_kosmicheskiy_zond_sdelal_samoe_blizkoe_foto_solnca_za_vsu_istoriu.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-26_23-44-05_886791.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-26_23-44-05_886791.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-26_23-44-05_886791.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-26_23-44-05_886791.jpg"/>
+                                            <span class="Dashboard-Content-Card--ico Dashboard-Content-Card--ico--photo"></span>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/457041_kosmicheskiy_zond_sdelal_samoe_blizkoe_foto_solnca_za_vsu_istoriu.html"
+                                           data-stat="article">
+                                            Космический зонд сделал самое близкое фото Солнца за всю историю<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="457041"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Dashboard--group">
+                <div class="Dashboard--group-content">
+                    <div class="Dashboard--group-title">
+                        Обратите внимание
+                    </div>
+                    <div class="Dashboard--group-boards">
+                        <div class="Dashboard--board" data-id="0.21028401562157062" data-stat="board"
+                             data-stat-num="12">
+                            <div class="Dashboard-Board Dashboard-Board----FORE_MEDIA" data-stat="FORE_MEDIA">
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/456964_prognoz_pogody_v_bishkeke_na_27_marta_2_aprelia.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-26_17-07-32_692402.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-26_17-07-32_692402.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-26_17-07-32_692402.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-26_17-07-32_692402.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/456964_prognoz_pogody_v_bishkeke_na_27_marta_2_aprelia.html"
+                                           data-stat="article">
+                                            Прогноз погоды в Бишкеке на 27 марта-2 апреля<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="456964"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/447904_mynicipalnye_parkovki:_adresa_besplatnye_dni_i_kyda_jalovatsia_informiryet_meriia.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-24_13-48-00_470173.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-24_13-48-00_470173.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-24_13-48-00_470173.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-24_13-48-00_470173.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/447904_mynicipalnye_parkovki:_adresa_besplatnye_dni_i_kyda_jalovatsia_informiryet_meriia.html"
+                                           data-stat="article">
+                                            Муниципальные парковки: адреса, бесплатные дни и куда жаловаться -
+                                            информирует мэрия<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="447904"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/456871_28_marta_v_chasti_bishkeka_otkluchat_svet_spisok_ylic.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-25_16-44-53_249809.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-25_16-44-53_249809.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-25_16-44-53_249809.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-25_16-44-53_249809.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/456871_28_marta_v_chasti_bishkeka_otkluchat_svet_spisok_ylic.html"
+                                           data-stat="article">
+                                            28 марта в части Бишкека отключат свет (список улиц)<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="456871"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/456847_chast_bishkeka_na_piat_dney_ostaviat_bez_gaza.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-24_10-58-49_689936.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-24_10-58-49_689936.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-24_10-58-49_689936.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-24_10-58-49_689936.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/456847_chast_bishkeka_na_piat_dney_ostaviat_bez_gaza.html"
+                                           data-stat="article">
+                                            Часть Бишкека на пять дней оставят без газа<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="456847"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Dashboard--group">
+                <div class="Dashboard--group-content">
+                    <div class="Dashboard--group-boards">
+                        <div class="Dashboard--board" data-id="0.13831780116101777" data-stat="board"
+                             data-stat-num="13">
+                            <div class="Dashboard-Board Dashboard-Board----FORE_MEDIA" data-stat="FORE_MEDIA">
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/456887_zarabotal_specialnyy_call_centr_dlia_priema_obrasheniy_po_perepisi_naseleniia.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-24_16-29-36_871952.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-24_16-29-36_871952.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-24_16-29-36_871952.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-24_16-29-36_871952.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/456887_zarabotal_specialnyy_call_centr_dlia_priema_obrasheniy_po_perepisi_naseleniia.html"
+                                           data-stat="article">
+                                            Заработал специальный call-центр для приема обращений по переписи
+                                            населения<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="456887"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/456939_kak_zapisat_rebenka_v_pervyy_klass_poshagovaia_instrykciia_dlia_roditeley.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-25_14-05-04_614797.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-25_14-05-04_614797.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-25_14-05-04_614797.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-25_14-05-04_614797.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/456939_kak_zapisat_rebenka_v_pervyy_klass_poshagovaia_instrykciia_dlia_roditeley.html"
+                                           data-stat="article">
+                                            Как записать ребенка в первый класс? Пошаговая инструкция для родителей<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="456939"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/456989_nalogoplatelshikam_napomnili_o_novshestvah_po_elektronnym_schetam_faktyram_s_1_aprelia.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-26_10-43-56_731785.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-26_10-43-56_731785.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-26_10-43-56_731785.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-26_10-43-56_731785.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/456989_nalogoplatelshikam_napomnili_o_novshestvah_po_elektronnym_schetam_faktyram_s_1_aprelia.html"
+                                           data-stat="article">
+                                            Налогоплательщикам напомнили о новшествах по электронным счетам-фактурам с 1
+                                            апреля<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="456989"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/456977_v_bishkeke_vpervye_proydet_masshtabnyy_forym_cifrovaia_gramotnost_3.0.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-25_22-35-46_467809.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-25_22-35-46_467809.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-25_22-35-46_467809.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-25_22-35-46_467809.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/456977_v_bishkeke_vpervye_proydet_masshtabnyy_forym_cifrovaia_gramotnost_3.0.html"
+                                           data-stat="article">
+                                            В Бишкеке впервые пройдет масштабный форум &quot;Цифровая грамотность 3.0&quot;<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="456977"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Dashboard--group">
+                <div class="Dashboard--group-content">
+                    <div class="Dashboard--group-title">
+                        Гид Kaktus
+                    </div>
+                    <div class="Dashboard--group-boards">
+                        <div class="Dashboard--board" data-id="0.9803294693900195" data-stat="board" data-stat-num="14">
+                            <div class="Dashboard-Board Dashboard-Board----FORE_MEDIA" data-stat="FORE_MEDIA">
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/456846_gid_kaktus._kyda_shodit_v_bishkeke_s_rebenkom_na_vesennih_kanikylah._10_idey.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-24_12-14-43_295268.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-24_12-14-43_295268.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-24_12-14-43_295268.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-24_12-14-43_295268.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/456846_gid_kaktus._kyda_shodit_v_bishkeke_s_rebenkom_na_vesennih_kanikylah._10_idey.html"
+                                           data-stat="article">
+                                            Гид Kaktus. Куда сходить в Бишкеке с ребенком на весенних каникулах. 10 идей<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="456846"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/371912_gid_kaktus._kliningovye_kompanii_bishkeka._telefony_ceny_obnovleno_18_marta.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-18_15-26-08_624385.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-18_15-26-08_624385.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-03-18_15-26-08_624385.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-18_15-26-08_624385.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/371912_gid_kaktus._kliningovye_kompanii_bishkeka._telefony_ceny_obnovleno_18_marta.html"
+                                           data-stat="article">
+                                            Гид Kaktus. Клининговые компании Бишкека. Телефоны, цены (обновлено 18
+                                            марта)<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="371912"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/454083_gid_kaktus._kyrsy_i_sekcii_po_plavaniu_v_bishkeke_dlia_detey_i_vzroslyh_ysloviia_ceny.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-02-07_18-33-14_676139.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-02-07_18-33-14_676139.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2022-02-07_18-33-14_676139.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-02-07_18-33-14_676139.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/454083_gid_kaktus._kyrsy_i_sekcii_po_plavaniu_v_bishkeke_dlia_detey_i_vzroslyh_ysloviia_ceny.html"
+                                           data-stat="article">
+                                            Гид Kaktus. Курсы и секции по плаванию в Бишкеке для детей и взрослых
+                                            (условия, цены)<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="454083"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Card">
+                                        <a class="Dashboard-Content-Card--image"
+                                           href="https://kaktus.media/doc/392133_gid_kaktus._arenda_tennisnyh_kortov_v_bishkeke_i_zaniatiia_tennisom_dlia_detey_i_vzroslyh.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-Card--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2019-05-28_16-32-38_462038.jpg 350w,
+                            https://data.kaktus.media/image/big/2019-05-28_16-32-38_462038.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) calc((720px - 30px) / 2),
+                            (min-width: 1240px) calc((1220px - 90px) / 4),
+                        " loading="lazy"
+                                                 data-src="https://data.kaktus.media/image/medium/2019-05-28_16-32-38_462038.jpg"
+                                                 src="https://data.kaktus.media/image/big/2019-05-28_16-32-38_462038.jpg"/>
+                                        </a>
+                                        <a class="Dashboard-Content-Card--name"
+                                           href="https://kaktus.media/doc/392133_gid_kaktus._arenda_tennisnyh_kortov_v_bishkeke_i_zaniatiia_tennisom_dlia_detey_i_vzroslyh.html"
+                                           data-stat="article">
+                                            Гид Kaktus. Аренда теннисных кортов в Бишкеке и занятия теннисом для детей и
+                                            взрослых<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="392133"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Dashboard--group">
+                <div class="Dashboard--group-content">
+                    <div class="Dashboard--group-title">
+                        Афиша
+                    </div>
+                    <div class="Dashboard--group-boards">
+                        <div class="Dashboard--board" data-id="0.41017798828757246" data-stat="board"
+                             data-stat-num="15">
+                            <div class="Dashboard-Board Dashboard-Board----FIVE" data-stat="FIVE">
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-CardMedia">
+                                        <a class="Dashboard-Content-CardMedia--image"
+                                           href="https://kaktus.media/doc/455546_prodoljaetsia_registraciia_na_vesenniy_zabeg_bakay_bank_jaz_demi_2022_ot_nomad_sport.html"
+                                           data-stat="article image">
+                                            <img class="Dashboard-Content-CardMedia--image-img lazyload" data-srcset="
+                            https://data.kaktus.media/image/medium/2022-03-03_09-20-42_606451.jpg 350w,
+                            https://data.kaktus.media/image/big/2022-03-03_09-20-42_606451.jpg 720w
+                        " data-sizes="
+                            (max-width: 740px) calc(100% - 20px),
+                            (max-width: 1239px) 720px,
+                            (min-width: 1240px) calc((1220px / 2) - 30px),
+                        " data-src="https://data.kaktus.media/image/big/2022-03-03_09-20-42_606451.jpg"
+                                                 src="https://data.kaktus.media/image/big/2022-03-03_09-20-42_606451.jpg"
+                                                 loading="lazy"/>
+                                        </a>
+                                        <a class="Dashboard-Content-CardMedia--name"
+                                           href="https://kaktus.media/doc/455546_prodoljaetsia_registraciia_na_vesenniy_zabeg_bakay_bank_jaz_demi_2022_ot_nomad_sport.html"
+                                           data-stat="article">
+                                            Продолжается регистрация на весенний забег &quot;Бакай Банк Жаз Деми - 2022&quot;
+                                            от Nomad Sport<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="455546"></span>
+                                        </a>
+                                        <div class="Dashboard-Content-CardMedia--category">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Line">
+                                        <a class="Dashboard-Content-Line--name"
+                                           href="https://kaktus.media/doc/455572_kyrgyzskaia_nacionalnaia_filarmoniia_predstavliaet:_repertyar_na_mart.html"
+                                           data-stat="article">
+                                            Кыргызская национальная филармония представляет: репертуар на март<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="455572"></span>
+                                        </a>
+                                        <div class="Dashboard-Content-Line--category">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Line">
+                                        <a class="Dashboard-Content-Line--name"
+                                           href="https://kaktus.media/doc/456077_teatr_opery_i_baleta_predstavil_repertyar_na_vtoryu_poloviny_marta.html"
+                                           data-stat="article">
+                                            Театр оперы и балета представил репертуар на вторую половину марта<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="456077"></span>
+                                        </a>
+                                        <div class="Dashboard-Content-Line--category">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Line">
+                                        <a class="Dashboard-Content-Line--name"
+                                           href="https://kaktus.media/doc/455983_na_myltimediynoy_vystavke_v_bishkeke_pokajyt_biokyltyrnoe_raznoobrazie_kyrgyzstana.html"
+                                           data-stat="article">
+                                            На мультимедийной выставке в Бишкеке покажут биокультурное разнообразие
+                                            Кыргызстана<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="455983"></span>
+                                        </a>
+                                        <div class="Dashboard-Content-Line--category">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Dashboard-Board--content">
+                                    <div class="Dashboard-Content-Line">
+                                        <a class="Dashboard-Content-Line--name"
+                                           href="https://kaktus.media/doc/456600_shedevry_mirovoy_klassiki._v_bishkek_priedyt_zvezdy_rossiyskogo_baleta.html"
+                                           data-stat="article">
+                                            &quot;Шедевры мировой классики&quot;. В Бишкек приедут звезды российского
+                                            балета<span
+                                                class="Dashboard-Content-Card--countComments tolstoy-comments-count"
+                                                data-identity="456600"></span>
+                                        </a>
+                                        <div class="Dashboard-Content-Line--category">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="Footer" data-stat="footer">
+    <div class="Footer--content">
+        <div class="Footer--top">
+            <div class="Footer--top-first">
+                <div class="Footer--logo-wrapper">
+                    <a class="Footer--logo" href="https://kaktus.media/" data-stat="logo">
+                        <img class="Footer--logo-img"
+                             src="https://kaktus.media/src/Template/Block/Footer/logo.svg?mtime=1613630869"/>
+                        <img class="Footer--logo-img-hover"
+                             src="https://kaktus.media/src/Template/Block/Footer/logo-hover.svg?mtime=1613706295"/>
+                    </a>
+                    <span class="Footer--age-limit">18+</span>
+                </div>
+                <div class="Footer--copyright">
+                    ©2015-2022
+                </div>
+            </div>
+            <ul class="Footer--socials" data-stat="socials">
+                <li class="Footer--socials-item">
+                    <a class="Header--socials-item-link Header--menu-socials-item-link Header--menu-socials-item-link--rss"
+                       href="https://kaktus.media/?rss" target="_blank" data-stat="rss"></a>
+                </li>
+                <li class="Footer--socials-item">
+                    <a class="Header--socials-item-link Header--menu-socials-item-link Header--menu-socials-item-link--facebook"
+                       href="https://www.facebook.com/kaktus.kyrgyzstan/" target="_blank" data-stat="facebook"></a>
+                </li>
+                <li class="Footer--socials-item">
+                    <a class="Header--socials-item-link Header--menu-socials-item-link Header--menu-socials-item-link--odnoklassniki"
+                       href="https://ok.ru/kaktus.media" target="_blank" data-stat="odnoklassniki"></a>
+                </li>
+                <li class="Footer--socials-item">
+                    <a class="Header--socials-item-link Header--menu-socials-item-link Header--menu-socials-item-link--twitter"
+                       href="https://twitter.com/kaktus__media" target="_blank" data-stat="twitter"></a>
+                </li>
+                <li class="Footer--socials-item">
+                    <a class="Header--socials-item-link Header--menu-socials-item-link Header--menu-socials-item-link--youtube"
+                       href="https://www.youtube.com/channel/UCzJdIIIJLJtCOQ53vCcRVaQ" target="_blank"
+                       data-stat="youtube"></a>
+                </li>
+                <li class="Footer--socials-item">
+                    <a class="Header--socials-item-link Header--menu-socials-item-link Header--menu-socials-item-link--instagram"
+                       href="https://www.instagram.com/kaktus__media/" target="_blank" data-stat="instagram"></a>
+                </li>
+                <li class="Footer--socials-item">
+                    <a class="Header--socials-item-link Header--menu-socials-item-link Header--menu-socials-item-link--telegram"
+                       href="https://t.me/kaktus_mediakg" target="_blank" data-stat="telegram"></a>
+                </li>
+                <li class="Footer--socials-item">
+                    <a class="Header--socials-item-link Header--menu-socials-item-link Header--menu-socials-item-link--tiktok"
+                       href="https://www.tiktok.com/@kaktus.media?" target="_blank" data-stat="tiktok"></a>
+                </li>
+            </ul>
+            <a class="Footer--lang" href="https://kaktus.kg/" target="_blank" data-stat="lang">
+                KG </a>
+        </div>
+        <div class="Footer--second">
+            <div class="Footer--contacts-parent" data-stat="contacts">
+                <div class="Footer--contacts Header--contacts--redaction" data-stat="redaction">
+                    <div class="Footer--contacts-title">
+                        Редакция:
+                    </div>
+                    <ul class="Footer--contacts-list">
+                        <li class="Footer--contacts-contact">
+                            <a class="Footer--contacts-contact-link Footer--contacts-contact-link--email"
+                               href="/cdn-cgi/l/email-protection#63130a100e024d08020817161023040e020a0f4d000c0e"
+                               data-stat="email">
+                                <span class="__cf_email__"
+                                      data-cfemail="413128322c206f2a202a35343201262c20282d6f222e2c">[email&#160;protected]</span>
+                            </a>
+                        </li>
+                        <li class="Footer--contacts-contact">
+                            <a class="Footer--contacts-contact-link Footer--contacts-contact-link--phone"
+                               href="tel:+996 (312) 66 20 75" data-stat="phone">
+                                +996 (312) 66 20 75 </a>
+                        </li>
+                        <li class="Footer--contacts-contact">
+                            <a class="Footer--contacts-contact-link Footer--contacts-contact-link--mobile"
+                               href="tel:+996 (700) 62 07 60" data-stat="mobile">
+                                +996 (700) 62 07 60 </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Footer--contacts Header--contacts--reklama" data-stat="reklama">
+                    <div class="Footer--contacts-title">
+                        Отдел рекламы:
+                    </div>
+                    <ul class="Footer--contacts-list">
+                        <li class="Footer--contacts-contact">
+                            <a class="Footer--contacts-contact-link Footer--contacts-contact-link--phone"
+                               href="tel:+996 (990) 90 40 09" data-stat="phone">
+                                +996 (990) 90 40 09 </a>
+                        </li>
+                        <li class="Footer--contacts-contact">
+                            <a class="Footer--contacts-contact-link Footer--contacts-contact-link--phone_1"
+                               href="tel:+996 (312) 88 00 16" data-stat="phone_1">
+                                +996 (312) 88 00 16 </a>
+                        </li>
+                        <li class="Footer--contacts-contact">
+                            <a class="Footer--contacts-contact-link Footer--contacts-contact-link--phone_2"
+                               href="tel:+996 (701) 70 80 70" data-stat="phone_2">
+                                +996 (701) 70 80 70 </a>
+                        </li>
+                        <li class="Footer--contacts-contact">
+                            <a class="Footer--contacts-contact-link Footer--contacts-contact-link--phone_3"
+                               href="tel:+996 (312) 66 20 63" data-stat="phone_3">
+                                +996 (312) 66 20 63 </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Footer--contacts-reklama">
+                    <a class="Footer--contacts-reklama-link" href="https://kaktus.media/?reklama" data-stat="ad">
+                        Реклама на сайте </a>
+                </div>
+                <div class="Footer--contacts-address">ОФ “ПроМедиа Плюс”. Бишкек, ул. Тыныстанова, 197/1 4-й этаж</div>
+            </div>
+            <ul class="Footer--tags" data-stat="tags">
+                <li class="Footer--tag">
+                    <a class="Footer--tag-link" href="https://kaktus.media/?lable=8" data-stat="tag" data-stat-num="8">
+                        Все новости </a>
+                </li>
+                <li class="Footer--tag">
+                    <a class="Footer--tag-link" href="https://kaktus.media/?lable=7650" data-stat="tag"
+                       data-stat-num="7650">
+                        Спецпроекты </a>
+                </li>
+                <li class="Footer--tag">
+                    <a class="Footer--tag-link" href="https://kaktus.media/?lable=15" data-stat="tag"
+                       data-stat-num="15">
+                        Call-центр </a>
+                </li>
+                <li class="Footer--tag">
+                    <a class="Footer--tag-link" href="https://kaktus.media/?lable=7612" data-stat="tag"
+                       data-stat-num="7612">
+                        Полезное </a>
+                </li>
+                <li class="Footer--tag">
+                    <a class="Footer--tag-link" href="https://kaktus.media/?lable=7613" data-stat="tag"
+                       data-stat-num="7613">
+                        Истории </a>
+                </li>
+            </ul>
+        </div>
+        <div class="Footer--bottom">
+            <div class="Footer--bottom-logo-wrapper">
+                <div class="Footer--top-first">
+                    <a class="Footer--logo" href="https://kaktus.media/" data-stat="logo">
+                        <img class="Footer--logo-img"
+                             src="https://kaktus.media/src/Template/Block/Footer/logo.svg?mtime=1613630869"/>
+                        <img class="Footer--logo-img-hover"
+                             src="https://kaktus.media/src/Template/Block/Footer/logo-hover.svg?mtime=1613706295"/>
+                    </a>
+                    <div class="Footer--copyright">
+                        ©2015-2022
+                    </div>
+                </div>
+                <span class="Footer--age-limit">18+</span>
+            </div>
+            <div class="Footer--callCenter" data-stat="contacts">
+                <div class="Footer--contacts-reklama-additional">
+                    <a class="Footer--contacts-reklama-link-additional" href="https://kaktus.media/?reklama"
+                       data-stat="ad">
+                        Реклама на сайте </a>
+                </div>
+                <span class="Footer--callCenter-text">
+Есть тема? Пишите Kaktus.media в Telegram и WhatsApp: </span>
+                <a class="Footer--callCenter-phone" href="tel:+996 (700) 62 07 60" data-stat="Бишкек">
+                    +996 (700) 62 07 60(Бишкек)
+                </a></div>
+            <div class="Footer--counters" data-stat="counters">
+                <div class="Footer--counter" data-stat="liveInternet">
+                    <script data-cfasync="false"
+                            src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                    <script>
+                        document.write("<a href='https://www.liveinternet.ru/click' target=_blank><img src='https://counter.yadro.ru/hit?t26.6;r" + escape(document.referrer) + ((typeof(screen)=="undefined")?"":";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ";u" + escape(document.URL) + ";" + Math.random() + "' border=0 width=88 height=15 alt='' title='LiveInternet: показано число посетителей за сегодня'><\/a>")
+                    </script>
+                </div>
+                <div class="Footer--counter" data-stat="netKg">
+                    <script>
+            java="1.0";
+            java1=""+"refer="+escape(document.referrer)+"&amp;page="+escape(window.location.href);
+            document.cookie="astratop=1; path=/";
+            java1+="&amp;c="+(document.cookie?"yes":"now");
+            java="1.1";
+            java1+="&amp;java="+(navigator.javaEnabled()?"yes":"now");
+            java="1.2";
+            java1+="&amp;razresh="+screen.width+'x'+screen.height+"&amp;cvet="+
+            (((navigator.appName.substring(0,3)=="Mic"))?
+                screen.colorDepth:screen.pixelDepth);
+            java="1.3";
+            java1+="&amp;jscript="+java+"&amp;rand="+Math.random();
+            document.write("<a href='https://www.net.kg/stat.php?id=5798&amp;fromsite=5798' target='_blank'>"+
+            "<img src='https://www.net.kg/img.php?id=5798&amp;"+java1+
+            "' border='0' alt='WWW.NET.KG' width='88' height='10'/></a>");
+
+                    </script>
+                    <noscript>
+                        <a
+                                href='https://www.net.kg/stat.php?id=5798&amp;fromsite=5798'
+                                target='_blank'
+                        >
+                            <img
+                                    src="https://www.net.kg/img.php?id=5798"
+                                    alt='WWW.NET.KG'
+                                    width='88'
+                                    height='10'
+                            />
+                        </a>
+                    </noscript>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="BannerM" data-stat="bannerM">
+    <div class="BannerM--close"></div>
+    <div class="BannerM--content">
+        <style>@media (min-width: 501px){.bnr-m-mobile{display:none !important;}}</style>
+        <div class="bnr bnr-m bnr-m-mobile" data-key="kaktus/m" data-part="mobile" data-type="banner">
+            <div style="padding-top:31.25%;"></div>
+        </div>
+    </div>
+</div>
+<div class="Up" data-stat="up"></div>
+</body>
+<script async defer src="https://kaktus.media/src/Template/Block/TolstoyComment/TolstoyComment.js?mtime=1617101608"/>
+</script>
+<script async defer src="https://kaktus.media/src/Template/Block/BannerA/BannerA.js?mtime=1614580607"/>
+</script>
+<script async defer src="https://kaktus.media/src/Template/Block/Header/Header.js?mtime=1640248969"/>
+</script>
+<script async defer src="https://kaktus.media/src/Template/Block/BannerM/BannerM.js?mtime=1614568234"/>
+</script>
+<script async defer src="https://kaktus.media/src/Template/Block/Up/Up.js?mtime=1615433771"/>
+</script>
+</html>
