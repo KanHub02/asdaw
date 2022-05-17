@@ -2,7 +2,7 @@ from django.db import models
 
 
 # Create your models here.
-class Books(models.Model):
+class Book(models.Model):
     GENRE_CHOICE = (
         ("Drama", "Drama"),
         ("Horror", "Horror"),
@@ -23,4 +23,4 @@ class Books(models.Model):
     age_control = models.PositiveIntegerField()
 
     def __str__(self):
-        return self.title, self.genre, self.author
+        return self.title

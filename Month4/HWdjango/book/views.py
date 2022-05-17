@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
-from .models import Books
+from .models import Book
 
 
 # Create your views here.
@@ -9,7 +9,7 @@ def title(request):
 
 
 def all_books(request):
-    books = Books.objects.all()
+    books = Book.objects.all()
     return render(request, "book.html", {"main": books})
 
 def book_info(request):
